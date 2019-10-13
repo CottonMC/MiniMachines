@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "starter",
+  "id": "minimachines",
   "version": "$version",
 
-  "name": "Fabric Starter",
-  "icon": "assets/starter/icon.png",
-  "description": "Template for starting out Fabric mods",
+  "name": "Mini Machines",
+  "description": "Miniature machinery for farmers and miners alike",
+  "author": "Juuz",
+
+  "icon": "assets/minimachines/icon.png",
   "license": "MIT",
   "contact": {
-    "sources": "https://github.com/CottonMC/FabricStarter"
+    "sources": "https://github.com/CottonMC/MiniMachines"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.cottonmc.starter.FabricStarter"
+      "io.github.cottonmc.minimachines.MiniMachines"
     ]
   },
   "mixins": [
-    "mixins.starter.json"
+    "mixins.minimachines.json"
   ],
   "depends": {
-    "fabricloader": ">=0.4.0"
-  },
-  "custom": {
-    "modmenu:api": true
+    "fabricloader": ">=0.4.0",
+    "libmultipart": ">=0.2.0"
   }
 }
